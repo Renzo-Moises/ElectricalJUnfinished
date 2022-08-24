@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Head info-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Handyman services">
+  <meta name="keywords" content="Handyman services, Electrician services, Electrician, Handyman, Handy man, Handy-man, cheap electrician, cheap handyman, repairs, HTML,CSS,JavaScript">
+    <meta name="author" content="Renzo Moises">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>Electrical J. Ltd | Homepage</title>
+<!--    Linking to JavaScript file-->
+    <script src="scripts.js"></script>    
+<!--    linking to css file-->
+<link rel = "stylesheet" type = "text/css" href = "styles.css"> 
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<script src="https://kit.fontawesome.com/7f9bcba9f8.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet">
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+
+</head>
+
+<body>
+    <div class='wrapper'>    
+<!--        Header-->
+        <div id="header">
+            <nav>
+                <a href="#default" class="logo">Electrical Jeff. VP</a>
+            <!--
+                  <div class="header-right">
+                     <div class="dropdown">
+                      <button class="dropbtn" onclick="myFunction()">Contact us
+                        <i class="fa-solid fa-bars" fa-2xl ></i>
+                      </button>
+                      <div class="dropdown-content" id="myDropdown">
+                        <a href="#">About us</a>
+                        <a href="#">Services</a>
+                        <a href="#">Contact us</a>
+                      </div>
+                      </div> 
+                  </div>
+            -->
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" id="hideMenu" onclick="HideMenu()"></i>
+                        <ul>
+                            <li><a href="index.html"\>Home</a></li>
+                            <li><a href="about.html"\>About</a></li>
+                            <li><a href="Services.html"\>Services</a></li>
+                            <li><a href="contact.html"\>Contact</a></li>
+                        </ul>
+
+                </div>
+                <i class="fa fa-bars" id="showMenu" onclick="ShowMenu()"></i>
+           </nav> 
+
+        </div>
+
+        <!--
+        <div id ="menu">
+            <p1>MENU MENU MENU</p1>
+            </div>
+        -->
+
+
+        <!--        body-->
+        <div id = "Intro">
+                <h2 class = "pageSubheadings">About us<br></h2>
+
+                <p class = "Paragraph">
+                    PSOE (center-left) and Podemos (left) parties make history with their agreement to form a coalition goverment. After failing to reach an agreenment in the last legislation, even though each party had more seats than now, the leaders of PSOE and Podemos signed the nanana document which consits in 10 main points to focus once they get the mayority in congress. 
+                </p>
+        </div>
+<!--    first heading and text-->
+        <div style = "background-color: white; opacity: 0.85; margin-bottom: 5%;">
+            <h2 class = "pageSubheadings" style = "margin-top: 2%;">
+                Who is behind this website?
+            </h2>
+            <p class = "Paragraph" style="text-align: center; width: 80%; margin-left: 10%; margin-right: 10%;">
+                We are a group of students interested in politics, specially in spanish politics, we are not biased to any party, but 100% antifascist.
+            </p>
+        </div>
+
+    <!--    Second heading and text-->  
+        <div style = "background-color: white; opacity: 0.85; margin-bottom: 5%;">
+            <h2 class = "pageSubheadings">Our Purpose?</h2>
+            <p class = "Paragraph" style="text-align: center; width: 80%; margin-left: 10%; margin-right: 10%; ">
+                Our purpose is to bring the latest news regards spanish politics and to fight against the fake news spread in the internet.
+            </p>
+        </div>    
+
+    <!--    Third heading and text-->  
+        <div style = "background-color: white; opacity: 0.85">    
+            <h2 class = "pageSubheadings">No copyright intended</h2>
+            <p class = "Paragraph" style="text-align: center; width: 80%; margin-left: 10%; margin-right: 10%; ">            We are not making any money out of the content published in the website.
+                <br>
+                Credits to "electomania" for the Poll image.
+                <br>
+                Credits to "El pais" for the images.
+            </p>
+        </div>
+
+        
+        
+        
+        
+        
+<!--
+                <img class="toolsimage" src = "backg-pic-electrician.jpeg" alt = "Tools and wires">        
+-->
+            
+            
+            
+        
+        
+        <i class='fa fa-caret-down' style='color: red'></i>
+        <!--        Fotter-->
+        <footer>
+            <div id ="footer">
+                <p1>FOOTER FOOTER FOOTER</p1>
+            </div>
+
+        <!--    style = "padding: 5px; background-color: darkred;"-->
+        </footer>
+
+        <script>   
+            var navLinks = document.getElementById("navLinks");
+
+            function ShowMenu(){
+                navLinks.style.right = "0";
+        //        navLinks.style.display = "block";
+        //        navLinks.style.visibility = "visible";
+
+        //        navLinks.style.right = "0";
+            }
+            function HideMenu(){
+        //        navLinks.style.visibility = "hidden";
+                navLinks.style.right = "-200px";
+            }
+
+
+            window.onclick = function(event) {
+                if (!event.target.matches('#showMenu') && !event.target.matches('.nav-links')) {
+                    HideMenu();
+        //                console.log("Clicked outside")
+                    }
+            }
+
+        </script> 
+        
+    </div>
+    
+</body>    
+</html>     

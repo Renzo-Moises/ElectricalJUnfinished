@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Head info-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Handyman services">
+  <meta name="keywords" content="Handyman services, Electrician services, Electrician, Handyman, Handy man, Handy-man, cheap electrician, cheap handyman, repairs, HTML,CSS,JavaScript">
+    <meta name="author" content="Renzo Moises">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>Electrical J. Ltd | Homepage</title>
+<!--    Linking to JavaScript file-->
+    <script src="scripts.js"></script>    
+<!--    linking to css file-->
+<link rel = "stylesheet" type = "text/css" href = "styles.css"> 
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<script src="https://kit.fontawesome.com/7f9bcba9f8.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet">
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    
+    
+
+</head>
+
+<body>
+    <div class='wrapper'>    
+<!--        Header-->
+        <div id="header">
+            <nav>
+                <a href="index.html" class="logo">Electrical Jeff. VP</a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" id="hideMenu" onclick="HideMenu()"></i>
+                        <ul>
+                            <li><a href="index.html"\>Home</a></li>
+                            <li><a href="about.html"\>About</a></li>
+                            <li><a href="Services.html"\>Services</a></li>
+                            <li><a href="contact.html"\>Contact</a></li>
+                        </ul>
+
+                </div>
+                <i class="fa fa-bars" id="showMenu" onclick="ShowMenu()"></i>
+           </nav> 
+
+        </div>  
+    
+<!--    Thank you message to visitors-->
+          
+        
+        <h2 class = "pageSubheadings" style="background-color:#335B96; color:white;">Get in touch</h2>
+<!--        <div style="background-color: white; opacity: 0.85; width: 100%;" >-->
+        <p class = "Paragraph">
+            We appreciate very much your feedback, it really helps use to improve each day. So, if you have any suggestion we would be more than happy to have it as long as it is always respectul and constructive.We have a easy to use form for you to contact us.
+        </p>
+<!--        </div>    -->
+        
+        
+        
+        
+        <nav role="sub" style="background-color: darkgrey;"> 
+                <div class="nav-links-fotter" id="navLinks-fotter">
+                    <ul style="padding: 0;">
+                        <div class="contactnav">
+                        <a style="color: white"><i class="fa-solid fa-envelope"></i>&nbsp;electricalJV@gmail.com</a>
+                        <a style="color: white">|</a>
+                        <a style="color: white"><i class="fa-brands fa-whatsapp"></i>&nbsp;07867861535</a>
+                        
+
+                        <div class="Call-us"><a id="button-call" href="tel:+447867861533"><i id="telephone" class='fa fa-phone' style='color: white;'></i> Call us</a></div>
+                        </div>
+
+
+                    </ul>
+                </div>
+            </nav>
+        
+        <p class = "Paragraph">
+            Alternatively, you can contacts use by filling the form below. We will get back to you shortly.
+        </p>
+          
+        
+<!--    Contact form-->
+<!--        <div id = "error">      -->
+        <div class="Contactwrapper">
+        <h2 class="pageSubheadings" style="border: 1px solid white">contact us</h2>
+        <div id="error_message"></div>
+        
+<!--        Fields to be completed in contact form-->
+            <form id="myform" onsubmit="return validation()">
+            <div class="input_field" >
+            <input type="text" placeholder="Your name" id="name">
+            </div>
+            
+                
+            <div class="input_field">
+                <input type="text" placeholder="Email address" id="email">      
+            </div>                
+             
+            <div class="input_field">
+                <textarea id="message" placeholder="Message"></textarea>   
+            </div>
+            
+            <div class="btn">
+                <input type="submit">    
+            </div>
+                
+            </form>
+        
+        </div>
+        
+        
+        
+        
+<!--
+        <div class="llama">
+            
+          <a id="button-call" style="color: black;" href="tel:+447867861533"><i id="telephone" class='fa fa-phone' style='color: black;'></i> Call us</a></div>            
+            
+-->
+        
+        
+    </div>
+    
+    
+    <!--        Fotter-->
+    <footer>
+        <div id ="footer">
+            <nav role="sub"> 
+                <div class="nav-links-fotter" id="navLinks-fotter">
+                    <ul>
+                        <li><a href="about.html"\>About</a></li>
+                        <li><a href="Services.html"\>Services</a></li>
+                        <li><a href="contact.html"\>Contact</a></li>
+
+                        <div class="Call-us"><a id="button-call" href="tel:+447867861533"><i id="telephone" class='fa fa-phone' style='color: white;'></i> Call us</a></div>
+
+
+                    </ul>
+                </div>
+            </nav>
+
+
+        </div>
+
+    <div class="foot">Copyright 2022 | Electrical Jeff | Website Developed by Renzo Moises Piguave</div> 
+
+    </footer>
+
+    <script>   
+        var navLinks = document.getElementById("navLinks");
+
+        function ShowMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function HideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+
+        window.onclick = function(event) {
+            if (!event.target.matches('#showMenu') && !event.target.matches('.nav-links')) {
+                HideMenu();
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
