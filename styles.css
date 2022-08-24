@@ -91,7 +91,7 @@ th, td{
 #footer{
 /*    position: fixed;*/
     min-height: 50px;
-    background-color: dimgray;
+    background-color: black;
     margin-top: 2%;
 /*    width: 100%;*/
     bottom: 0;
